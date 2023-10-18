@@ -7,7 +7,7 @@ namespace inlämming_4._2
         {
 
             Console.WriteLine("Skriv in ett heltal");
-            int tal1 = int.Parse(Console.ReadLine());
+            int heltal = int.Parse(Console.ReadLine());
 
             int HighTal = 0;
             while(true)
@@ -20,10 +20,10 @@ namespace inlämming_4._2
                 }
 
                 Console.WriteLine("Skriv in ett heltal");
-                int heltal = int.Parse(Console.ReadLine());
-                if (heltal > HighTal || tal1 > HighTal)
+                heltal = int.Parse(Console.ReadLine());
+                if (heltal > HighTal)
                 {
-                    HighTal = heltal; HighTal = tal1;
+                    HighTal = heltal;
                 }
             }
 
